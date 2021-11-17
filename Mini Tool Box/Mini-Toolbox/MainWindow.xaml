@@ -1,0 +1,51 @@
+﻿<Window x:Class="MegaToolsDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MegaToolsDemo"
+        mc:Ignorable="d" FontSize="24" 
+        Title="Mini ToolBox" Height="335" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="253"/>
+            <ColumnDefinition Width="253"/>
+            <ColumnDefinition Width="253"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12"/>
+            <RowDefinition Height="*"/>
+
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="          Tweaking" FontSize="24" Height="40"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="             Useful" FontSize="24" Height="40"/>
+        <TextBlock Grid.Row="1" Grid.Column="3" Text="           OC Tools" FontSize="24" Height="40"/>
+
+        <Button Grid.Row="2" Grid.Column="1" Content="Autoruns" Width="240" Height="55" Click="Button_Click"/>
+        <Button Grid.Row="3" Grid.Column="1" Content="Affinity Tool" Width="240" Height="55" Click="Button_Click_1"/>
+        <Button Grid.Row="4" Grid.Column="1" Content="MSI Utility" Width="240" Height="55" Click="Button_Click_2"/>      
+        <Button Grid.Row="5" Grid.Column="1" Content="Timer Resoultion" Width="240" Height="55" Click="Button_Click_3"/>
+
+        <Button Grid.Row="2" Grid.Column="2" Content="Activate Windows" Width="240" Height="55" Click="Button_Click_4"/>
+        <Button Grid.Row="3" Grid.Column="2" Content="CPU-Z" Width="240" Height="55" Click="Button_Click_5"/>
+        <Button Grid.Row="4" Grid.Column="2" Content="GPU-Z" Width="240" Height="55" Click="Button_Click_6"/>
+        <Button Grid.Row="5" Grid.Column="2" Content="Rufas" Width="240" Height="55" Click="Button_Click_7"/>
+
+        <Button Grid.Row="2" Grid.Column="3" Content="AIDA64" Width="240" Height="55" Click="Button_Click_8"/>
+        <Button Grid.Row="3" Grid.Column="3" Content="Linpack Xtreme" Width="240" Height="55" Click="Button_Click_9"/>
+        <Button Grid.Row="4" Grid.Column="3" Content="TM5" Width="240" Height="55" Click="Button_Click_10"/>
+        <Button Grid.Row="5" Grid.Column="3" Content="OCCT" Width="240" Height="55" Click="Button_Click_11"/>
+
+    </Grid>
+</Window>
